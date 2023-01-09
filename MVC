@@ -1,0 +1,20 @@
+//controller function
+ public function getActivities()
+      {
+        $data=Modelname::getActivities();
+         
+          
+             $response['data']= $data;
+             $response['message'] = " Successfully.";
+             $response['status']=200;
+         
+          
+          echo json_encode($response);
+      }
+
+//model functions
+public static function  getActivities()
+   {
+       $query="";
+      return $query;
+   }
